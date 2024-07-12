@@ -36,11 +36,11 @@ class Line_Tracking:
                 PWM.setMotorModel(-800, -800, -800, -800)  # Back up
                 time.sleep(0.5)  # Back up for 0.5 seconds
                 PWM.setMotorModel(-1500, -1500, 1500, 1500)
-                time.sleep(.3)
+                time.sleep(0.3)
                 PWM.setMotorModel(800, 800, 800, 800)
                 if self.LMR == 0:
                     PWM.setMotorModel(1500, 1500, -1500, -1500)
-                    time.sleep(.3)
+                    time.sleep(0.4)
                     PWM.setMotorModel(800, 800, 800, 800)
             time.sleep(0.01)  # Add a small delay to prevent high CPU usage
             continue
